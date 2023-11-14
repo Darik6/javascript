@@ -1,0 +1,109 @@
+<!-- <h1 id="title">Hello World</h1>
+
+<script>
+  var para = document.getElementById("title");
+  console.log(para.textContent);
+  para.textContent("Bye World");
+</script> -->
+
+<!-- 
+
+ <h1 id="h1">Hello World</h1>
+ <button onclick="he()">cart</button>
+
+ <script>
+    var h1=document.getElementById("h1")
+    console.log(h1.textContent) 
+ 
+  
+     function he()
+   {
+     h1.textContent="Bye World"
+   }
+     
+</script> -->
+
+<!-- 
+<input id="num1" value="4">
+<input id="num2" value="4">
+<button onclick="resultfunction()">Add</button>
+<p id="result">Result</p>
+<script>
+    var box1=document.getElementById("num1")
+    var box2=document.getElementById("num2")
+    var result=document.getElementById("result")
+    
+    
+    function resultfunction()
+    {
+     var box1value=Number(box1.value)
+     var box2value=Number(box2.value)
+     var total=box1value+box2value
+     result.textContent=total
+    
+    }
+    
+</script> -->
+
+<!-- 
+<h1>Guess The Number</h1>
+<input id="guessnumber">
+<button onclick="check()">Check</button>
+<p id="result">Your are Right/Wrong</p>
+<p id="score">score:10</p>
+
+
+<script>
+     var guessnumber=document.getElementById("guessnumber")
+     var result=document.getElementById("result")
+     var score=document.getElementById("score")
+     var randomnumber=Math.floor(Math.random()*10)+1
+     var totalscore=10
+     function check()
+     {
+        var enterednumber= guessnumber.value
+        if (randomnumber==enterednumber)
+        {
+          console.log("Right")
+          result.textContent="Right"
+
+           alert(" You Win....")
+
+        }
+        else{
+         totalscore=totalscore-1
+          console.log("Wrong")
+          result.textContent="Wrong"
+          alert(" You Lose....")
+          score.textContent="score:"+totalscore
+        }
+
+
+     }
+
+ </script> -->
+
+
+
+<!--  
+<h1 onclick="deletitem(event)">one</h1>
+<h1 onclick="deletitem(event)">Two</h1>
+<h1 onclick="deletitem(event)">Three</h1>
+<h1 onclick="deletitem(event)">Four</h1>
+<h1 onclick="deletitem(event)">Five</h1>
+<h1 onclick="deletitem(event)">Six</h1>
+<button>add</button>
+
+<script>
+   
+function deletitem()
+{
+
+event.target.remove()
+
+}
+
+</script>
+ -->
+
+
